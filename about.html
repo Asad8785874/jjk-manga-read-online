@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - JJK Manga | Your Trusted Reading Resource</title>
+    <meta name="description" content="Learn about JJK Manga, your trusted resource for Jujutsu Kaisen manga reading guides, story arc breakdowns, and comprehensive series information.">
+    <link rel="canonical" href="https://jujutsu-kaisen-manga-online.digitalocean.app/about.html">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #2d2d2d;
+            background-color: #faf8f5;
+        }
+        
+        a {
+            color: #8b5a2b;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        a:hover {
+            color: #5d3a1a;
+        }
+        
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #3d3d3d 0%, #2d2d2d 100%);
+            padding: 20px 0;
+            border-bottom: 4px solid #c9a86c;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+        
+        .logo span {
+            color: #c9a86c;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-icons a {
+            color: #c9a86c;
+            font-size: 0.9rem;
+            padding: 8px 12px;
+            border: 1px solid #c9a86c;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            background: #c9a86c;
+            color: #2d2d2d;
+        }
+        
+        nav {
+            background: #f5f0e8;
+            padding: 15px 0;
+            border-bottom: 1px solid #e0d5c5;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        nav a {
+            color: #4a4a4a;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+        
+        nav a:hover {
+            color: #8b5a2b;
+        }
+        
+        .page-header {
+            background: linear-gradient(135deg, #4a4a4a 0%, #2d2d2d 100%);
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: #c9a86c;
+        }
+        
+        main {
+            padding: 60px 0;
+        }
+        
+        .content-section {
+            background: #fff;
+            padding: 50px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+            border-left: 4px solid #c9a86c;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            color: #3d3d3d;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f0e6d8;
+        }
+        
+        h3 {
+            font-size: 1.4rem;
+            color: #4a4a4a;
+            margin: 30px 0 15px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+            color: #4a4a4a;
+        }
+        
+        ul {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            color: #4a4a4a;
+        }
+        
+        .author-bio {
+            background: linear-gradient(135deg, #f5f0e8 0%, #ebe4d8 100%);
+            padding: 40px;
+            border-radius: 8px;
+            margin-top: 40px;
+            text-align: center;
+            border: 1px solid #d9cfbf;
+        }
+        
+        .author-bio h3 {
+            color: #3d3d3d;
+            margin-top: 0;
+        }
+        
+        .author-bio p {
+            color: #5a5a5a;
+            font-style: italic;
+        }
+        
+        .author-social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .author-social a {
+            padding: 10px 20px;
+            background: #3d3d3d;
+            color: #c9a86c;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        
+        .author-social a:hover {
+            background: #c9a86c;
+            color: #2d2d2d;
+        }
+        
+        footer {
+            background: #2d2d2d;
+            color: #b0a090;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        footer p {
+            color: #b0a090;
+            margin-bottom: 10px;
+        }
+        
+        footer a {
+            color: #c9a86c;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                gap: 15px;
+            }
+            
+            .page-header {
+                padding: 40px 20px;
+            }
+            
+            .page-header h1 {
+                font-size: 2rem;
+            }
+            
+            .content-section {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">JJK <span>Manga</span></a>
+                <div class="social-icons">
+                    <a href="https://medium.com/@jjkmanganews251/jjk-manga-read-guide-for-new-and-returning-fans-aa07d165a523" target="_blank" rel="noopener">Medium</a>
+                    <a href="https://www.pinterest.com/jjkmanganews/_profile/" target="_blank" rel="noopener">Pinterest</a>
+                    <a href="https://x.com/jjkmanganews251" target="_blank" rel="noopener">X</a>
+                    <a href="https://linktr.ee/jjkmanganews251" target="_blank" rel="noopener">Linktree</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="story-arcs-guide.html">Story Arcs</a></li>
+                <li><a href="author.html">Author</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="page-header">
+        <div class="container">
+            <h1>About Us</h1>
+        </div>
+    </section>
+    
+    <main>
+        <div class="container">
+            <section class="content-section">
+                <h2>Our Mission</h2>
+                <p>Welcome to JJK Manga, your dedicated resource for everything related to Jujutsu Kaisen manga. We are passionate fans and readers who created this platform to help others discover, navigate, and fully appreciate Gege Akutami's exceptional dark fantasy series.</p>
+                
+                <p>Our mission is simple: to provide clear, comprehensive, and spoiler-conscious guidance for both new readers discovering the world of cursed energy for the first time and returning fans looking to deepen their understanding of this remarkable manga.</p>
+                
+                <h3>What We Offer</h3>
+                <p>At JJK Manga, we focus exclusively on the manga created by Gege Akutami. Our content includes:</p>
+                <ul>
+                    <li>Complete reading guides for navigating the series from Chapter 1 through its conclusion</li>
+                    <li>Story arc breakdowns that help readers understand the narrative structure</li>
+                    <li>Character and terminology resources for understanding jujutsu sorcerers and cursed techniques</li>
+                    <li>Reading order recommendations including the Jujutsu Kaisen 0 prequel</li>
+                    <li>Platform guidance for accessing official manga releases</li>
+                </ul>
+                
+                <h3>Our Approach</h3>
+                <p>We believe that great manga deserves thoughtful presentation. That's why we take care to organize information in ways that enhance rather than diminish the reading experience. We avoid unnecessary spoilers while still providing the context readers need to fully engage with the story of Tokyo Jujutsu High and its students.</p>
+                
+                <p>The world of Jujutsu Kaisen is rich with lore about curses, cursed energy, and the sorcerers who protect humanity. We strive to explain these concepts clearly while preserving the joy of discovery that makes reading manga so rewarding.</p>
+                
+                <h3>Why Jujutsu Kaisen</h3>
+                <p>Gege Akutami's creation represents a significant achievement in the shōnen manga genre. The series combines supernatural action with genuine emotional depth, creating a reading experience that resonates with audiences worldwide. From the Shibuya Incident Arc to the Culling Game Arc, each major story beat demonstrates masterful storytelling that rewards attentive readers.</p>
+                
+                <p>We chose to focus on this series because we believe it deserves a dedicated space where fans can find reliable information and connect with fellow enthusiasts. The community surrounding Jujutsu Kaisen is vibrant and welcoming, and we're proud to be part of it.</p>
+                
+                <h3>Join Our Community</h3>
+                <p>Whether you're just beginning your journey into the world of jujutsu sorcery or you've read every chapter multiple times, we welcome you to explore our resources. Connect with us through our social media channels to stay updated on new content and join discussions with fellow fans.</p>
+            </section>
+            
+            <section class="author-bio">
+                <h3>About the Author</h3>
+                <p><strong>Domic</strong></p>
+                <p>Read manga online free online without any limits</p>
+                <div class="author-social">
+                    <a href="https://medium.com/@jjkmanganews251/jjk-manga-read-guide-for-new-and-returning-fans-aa07d165a523" target="_blank" rel="noopener">Medium</a>
+                    <a href="https://www.pinterest.com/jjkmanganews/_profile/" target="_blank" rel="noopener">Pinterest</a>
+                    <a href="https://x.com/jjkmanganews251" target="_blank" rel="noopener">X (Twitter)</a>
+                    <a href="https://linktr.ee/jjkmanganews251" target="_blank" rel="noopener">Linktree</a>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 JJK Manga. All rights reserved.</p>
+            <p><a href="privacy.html">Privacy Policy</a> | <a href="contact.html">Contact Us</a></p>
+        </div>
+    </footer>
+</body>
+</html>

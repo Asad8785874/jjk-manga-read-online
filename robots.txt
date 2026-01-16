@@ -1,0 +1,7 @@
+# robots.txt for JJK Manga
+# https://jujutsu-kaisen-manga-online.digitalocean.app
+
+User-agent: *
+Allow: /
+
+Sitemap: https://jujutsu-kaisen-manga-online.digitalocean.app/sitemap.xml
